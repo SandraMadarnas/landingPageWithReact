@@ -8,7 +8,7 @@ import Footer from "./component/Footer.jsx";
 
 const cardsHTML = cards.map(
 	(carta,i) => { 
-		return <Card CardTitle={carta.CardTitle} CardImage={carta.CardImage} CardDescription={carta.CardDescription} key={i} /> 
+		return <Card CardImage={carta.CardImage} CardTitle={carta.CardTitle} CardDescription={carta.CardDescription} key={i} /> 
 	}
 );
 
