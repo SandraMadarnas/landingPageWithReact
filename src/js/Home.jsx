@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./component/NavBar.jsx";
 import Welcome from "./component/Welcome.jsx";
 import Card from "./component/Card.jsx";
-import { cards } from "./component/CardsObject.jsx";
+import { cards } from "./component/cardsObject.jsx";
 import Footer from "./component/Footer.jsx";
 
 
@@ -15,7 +15,8 @@ const cardsHTML = cards.map(
 
 const Home = () => {
   return (
-    <>
+    <React.Fragment>
+      {/* Esto es igual a <></> */}
       <NavBar />
       <div className="container">
         <Welcome />
@@ -24,7 +25,7 @@ const Home = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </React.Fragment>
   );
 };
 
